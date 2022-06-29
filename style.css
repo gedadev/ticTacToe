@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(201, 210, 211);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main, header {
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info {
+    padding: 50px 0;
+    font-size: 30px;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 130px);
+}
+
+.field {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(75, 73, 73);
+    background-color: rgb(158, 154, 154);
+}
+
+.field:hover {
+    background-color: rgb(221, 213, 213);
+}
