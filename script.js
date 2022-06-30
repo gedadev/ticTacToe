@@ -24,3 +24,16 @@ const gameBoard = (() => {
 })();
 
 gameBoard.genGrid();
+
+const players = (name, fig) => {
+    const pName = name;
+    const figure = fig;
+    const turn = (fig === 'X') ? true : false;
+    return {pName, figure, turn};
+}
+
+const p1 = players('geda', 'O');
+console.log(p1.pName);
+console.log(p1.figure);
+console.log(p1.turn);
+console.log(p1);
